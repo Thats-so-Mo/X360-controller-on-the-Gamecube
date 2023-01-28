@@ -17,7 +17,11 @@ Items required for this fun little project:
 1x GameCube Controller for parts - You need the cable that connects to the controller port on the GameCube - Wire to Male Port cable
 ```
 
+The Wiring Diagram:
+![Wiring Diagram]https://raw.githubusercontent.com/Thats-so-Mo/X360-controller-on-the-Gamecube/main/GameCube%20Diagram.png)
 
 Special Thanks to Nicohood for developing the code/library that allows the Gamecube to accept input from an Arduino
+
 Special Thanks to Felis for developing the USB Host Shield library
+
 And Special Thanks to Froq/Simple Controllers helping me out and showing me that what I needed to do was possible.
