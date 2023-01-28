@@ -18,7 +18,7 @@ Items required for this fun little project:
 ```
 
 The Wiring Diagram:
-![Wiring Diagram]https://raw.githubusercontent.com/Thats-so-Mo/X360-controller-on-the-Gamecube/main/GameCube%20Diagram.png)
+![Wiring Diagram](https://raw.githubusercontent.com/Thats-so-Mo/X360-controller-on-the-Gamecube/main/GameCube%20Diagram.png)
 
 Special Thanks to Nicohood for developing the code/library that allows the Gamecube to accept input from an Arduino
 
