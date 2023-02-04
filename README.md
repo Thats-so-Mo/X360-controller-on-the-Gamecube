@@ -4,6 +4,7 @@ This project allows you to use a XBOX 360 controller on the Nintendo GameCube. I
 
 One thing I did learn from this project is that, with the USB Host Shield, you can use other controllers to control the Gamecube, such as PS4,PS3 XBOX ONE S Controllers, etc. It doesn't even have to be a controller, use a toaster and it would work the same - without the Host shield of course haha. Another benefit is that it showed me that for people with certain disabilities that prevent them from using a GameCube Controller, a custom controller could be developed to help circumvent the disability. The Possibilites are Endless. 
 
+I have uploaded multiple verisons of the code. They are pretty much are similar to each other with minor tweaks and such.
 
 
 Items required for this fun little project:
@@ -24,4 +25,4 @@ Special Thanks to Nicohood for developing the code/library that allows the Gamec
 
 Special Thanks to Felis for developing the USB Host Shield library
 
-And Special Thanks to Froq/Simple Controllers helping me out and showing me that what I needed to do was possible.
+And Special Thanks to Froq/Simple Controllers for helping me out and showing me that what I wanted to do was possible.
