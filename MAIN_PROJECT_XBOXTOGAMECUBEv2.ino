@@ -3,7 +3,7 @@
  * This code also uses the USB Host Shield Library 2.0 by Felis/Lauszus
  * I used Simple Controllers/Froq's SmashBox code as a basis to develop this. They also aided me previously! so thank you.
  * Without the three mentioned above, I wouldn't have been able to do this. So Thanks!
- *This Code written by That's So Mo
+ *This Code written/modified by That's So Mo
  *This code is open source and its free to share, improve on, modify or anything you like!
 */
 
@@ -15,19 +15,16 @@
 
 USB Usb;
 XBOXRECV Xbox(&Usb);
-//This makes the controller bidirection data line on pin number 8
+
 CGamecubeConsole GamecubeConsole1(8);      //Defines a "Gamecube Console" sending data to the console on pin 8
 Gamecube_Data_t d = defaultGamecubeData;   //Structure for data to be sent to console
 
-//This is needed but you don't need a controller on pin 7
+//This is needed but you don't need a controller on pin 7 apparently
 CGamecubeController GamecubeController1(7);
 
 
 void setup()
 {
-  //This is establishing the pin assignments up there to input pins
-
-
   //This is needed to run the code.
   GamecubeController1.read();
    Serial.begin(115200);
@@ -76,12 +73,12 @@ void loop()
   int leftOne = 0;
   int downOne = 0;
   
-  int lefthaty = Xbox.getAnalogHat(LeftHatY, i);
+  int lefthaty = Xbox.getAnalogHat(LeftHatY, i);    //This section assiocates maps the left analogue stick of the 360 controller to gamecube's left D stick. 
   int adjlefthaty = map(lefthaty, -32768, 32767, 128-86, 128+86);    
   int lefthatx = Xbox.getAnalogHat(LeftHatX, i);
   int adjlefthatx = map(lefthatx, -32768, 32767, 128-86, 128+86);
   
-  int righthaty = Xbox.getAnalogHat(RightHatY, i);
+  int righthaty = Xbox.getAnalogHat(RightHatY, i); //This section assiocates maps the right analogue stick of the 360 controller to gamecube's right C stick.
   int adjrighthaty = map(righthaty, -32768, 32767, 128-86, 128+86);    
   int righthatx = Xbox.getAnalogHat(RightHatX, i);
   int adjrighthatx = map(righthatx, -32768, 32767, 128-86, 128+86);  
@@ -90,7 +87,7 @@ void loop()
             pinB = 1;
             }
             
-        if (Xbox.getButtonClick(XBOX, i)){
+        if (Xbox.getButtonClick(XBOX, i)){ // This combination allows you to restart the GameCube - only useful if your using swiss to load games...etc.
             pinB = 1;
             pinR = 1;
             pinZ = 1;
