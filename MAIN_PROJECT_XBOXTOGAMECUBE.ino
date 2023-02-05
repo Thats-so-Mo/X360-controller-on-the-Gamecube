@@ -3,7 +3,7 @@
  * This code also uses the USB Host Shield Library 2.0 by Felis/Lauszus
  * I used Simple Controllers/Froq's SmashBox code as a basis to develop this. They also aided me previously! so thank you.
  * Without the three mentioned above, I wouldn't have been able to do this. So Thanks!
- *This Code written by That's So Mo
+ *This Code written/modified by That's So Mo
  *This code is open source and its free to share, improve on, modify or anything you like!
 */
 
@@ -82,7 +82,7 @@ void loop()
             pinB = 1;
             }
             
-        if (Xbox.getButtonClick(XBOX, i)){
+        if (Xbox.getButtonClick(XBOX, i)){ // This combination allows you to restart the GameCube - only useful if your using swiss to load games...etc.
             pinB = 1;
             pinR = 1;
             pinZ = 1;
@@ -126,10 +126,10 @@ void loop()
         if (Xbox.getButtonPress(START, i)){
             pinSTART = 1;}
             
-        if (Xbox.getAnalogHat(LeftHatX, i) > 10000) {
+        if (Xbox.getAnalogHat(LeftHatX, i) > 10000) { //When the left stick X axis of the Xbox controller is greater than 10000 (stick is tilted to the right) = GC Left stick - X-axis right.
           pinxAxis = 128+86;}
         
-        if (Xbox.getAnalogHat(LeftHatX, i) < -10000) {
+        if (Xbox.getAnalogHat(LeftHatX, i) < -10000) { //Basically, doing the code this way means that it removes the acturate positioning of the joysticks and implements just a simple up down left right position.
           pinxAxis = 128-86;}
         
         if (Xbox.getAnalogHat(LeftHatY, i) > 10000) {
