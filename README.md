@@ -27,6 +27,6 @@ The Wiring Diagram:
 
 Special Thanks to Nicohood for developing the code/library that allows the Gamecube to accept input from an Arduino
 
-Special Thanks to Felis for developing the USB Host Shield library
+Special Thanks to Felis, Lazsus and other developers for developing the USB Host Shield library
 
 And Special Thanks to Froq/Simple Controllers for helping me out and showing me that what I wanted to do was possible.
