@@ -6,6 +6,10 @@ One thing I did learn from this project is that, with the USB Host Shield, you c
 
 I have uploaded multiple verisons of the code. They are pretty much are similar to each other with minor tweaks and such.
 
+## Check out the video for a setup process and demonstration
+
+[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/j49BG9yv4ws/mqdefault.jpg?v=64c62b1e&sqp=CNjxtqYG&rs=AOn4CLDYsfBzxEWsJqSM3STeiJxOqb7fMg)](https://youtu.be/V1tuf1zIyzc)
+
 
 Items required for this fun little project:
 ```
